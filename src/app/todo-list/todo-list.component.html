@@ -1,0 +1,17 @@
+<h3 class="text-secondary mt-5 text-center">Task List</h3>
+<div class="row"></div>
+<ul class="list-group col-6 mx-auto">
+    
+    <li class="list-group-item" *ngFor="let todo of todos;index as i">
+
+        {{todo.task}}
+        
+            <input class="form-check-input ms-5" type="checkbox">
+       
+        
+
+        <button class="btn btn-danger right" (click)="removeTodo(i)"> &#215;</button>
+
+    </li>
+    
+</ul>
